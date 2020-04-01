@@ -1,0 +1,20 @@
+{
+  "name": "@marigold/theme-switch",
+  "version": "0.0.0",
+  "description": "Marigold Component to switch themes",
+  "main": "dist/index.js",
+  "module": "dist/theme-switch.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  },
+  "devDependencies": {
+    "@marigold/system": "0.0.0"
+  },
+  "scripts": {
+    "build": "tsdx build --tsconfig tsconfig.build.json --transpileOnly",
+    "watch": "tsdx watch --tsconfig tsconfig.build.json --transpileOnly"
+  }
+}
