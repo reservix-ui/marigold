@@ -1,4 +1,4 @@
-export { Box, BoxProps, MarigoldProvider } from '@marigold/system';
+export { Box, MarigoldProvider } from '@marigold/system';
 export * from './theme';
 
 export * from './Label';

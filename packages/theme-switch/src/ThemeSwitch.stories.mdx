@@ -1,0 +1,37 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Text } from '@marigold/components';
+import { MarigoldThemeSwitch } from './ThemeSwitch';
+import { themes, ThemeSelect } from './examples';
+
+<Meta title="@marigold/theme-switch" />
+
+# `@marigold/theme-switch`
+
+## Description
+
+Component that allows you to switch themes on runtime. This one includes `MarigoldProvider` so no need to add it yourself.
+
+## Properties
+
+| Property  | Type                            | Default |
+| :-------- | :------------------------------ | :------ |
+| `themes`  | `{ [name: string]: BaseTheme }` |         |
+| `initial` | `string (optional)`             |         |
+
+## Import
+
+```tsx
+import { MarigoldThemeSwitch } from '@marigold/theme-switch';
+```
+
+## Usage
+
+<Preview>
+  <Story name="default">
+    <MarigoldThemeSwitch themes={themes}>
+      <ThemeSelect />
+      <hr style={{ margin: '10px 0' }} />
+      <Text variant="body">This text changes its colors! Woot woot!</Text>
+    </MarigoldThemeSwitch>
+  </Story>
+</Preview>
