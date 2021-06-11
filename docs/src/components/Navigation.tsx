@@ -67,6 +67,9 @@ export const Navigation: React.FC = () => {
               <Link to="/components/hidden">Hidden</Link>
             </li>
             <li>
+              <Link to="/components/image">Image</Link>
+            </li>
+            <li>
               <Link to="/components/input">Input</Link>
             </li>
             <li>

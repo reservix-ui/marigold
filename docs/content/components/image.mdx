@@ -1,0 +1,53 @@
+---
+title: Image
+embeddedImages:
+  - ../../src/images/Marigold_Logo_Hotelstyle.png
+---
+
+# Image
+
+## Description
+
+With the Image component you can render an `img` element.
+The variant can be added with the variant prop which is `fullWidth` per default.
+
+## Properties
+
+| Property             | Type     | Default     |
+| :------------------- | :------- | :---------- |
+| `variant` (optional) | `string` | `fullWidth` |
+| `alt` (optional)     | `string` | ``          |
+
+## Import
+
+```tsx code
+import { Image } from '@marigold/components';
+```
+
+## Usage
+
+<pre>
+  <Img fluid={JSON.stringify(props.embeddedImages.image1.fluid.src, null, 2)} />
+  <code>
+    {JSON.stringify(props.embeddedImages.image1.original.src, null, 2)}
+  </code>
+</pre>
+
+```tsx
+<Img fluid={JSON.stringify(props.embeddedImages.image1.fluid.src, null, 2)} />
+```
+
+```tsx
+<Image
+  src={JSON.stringify(props.embeddedImages.image1.original.src, null, 2)}
+/>
+```
+
+```tsx
+<Image
+  src="/Marigold_Logo_Hotelstyle.png"
+  alt="marigold_logo_2"
+  width="500"
+  height="300"
+/>
+```

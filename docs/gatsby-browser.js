@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { preToCodeBlock } from 'mdx-utils';
+import Img from 'gatsby-image';
 
 import { Heading, Text } from '@marigold/components';
 import b2bTheme from '@marigold/theme-b2b';
@@ -86,6 +87,7 @@ const components = {
   tr: props => {
     return <tr style={{ padding: b2bTheme.space.xsmall }} {...props}></tr>;
   },
+  Img,
 };
 
 export const wrapRootElement = ({ element }) => {

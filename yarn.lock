@@ -11671,6 +11671,7 @@ __metadata:
     "@types/react-helmet": 6.1.1
     babel-preset-gatsby: 1.6.0
     gatsby: 3.6.2
+    gatsby-image: ^3.6.0
     gatsby-plugin-emotion: 6.6.0
     gatsby-plugin-manifest: 3.6.0
     gatsby-plugin-mdx: 2.6.0
@@ -14571,6 +14572,17 @@ fsevents@^1.2.7:
   dependencies:
     "@babel/runtime": ^7.12.5
   checksum: 67ac60791a5d8a218c02c506e4f100a4f4ca99d52bdae68ee80bc06d532f56e2f9b0237c2c52c73091ac0d52fccf2ac1c73df807e8649e925924b08119947d2f
+  languageName: node
+  linkType: hard
+
+"gatsby-image@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-image@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+    object-fit-images: ^3.2.4
+    prop-types: ^15.7.2
+  checksum: 32e6ab087b0a70607e8354e42c9fc601fa9b6cdaf34b8e659172e9308665e5ddbe54c5b975103fe332022039fc73d1eeaccfd1872f2da75dfb00b62dfeb8652b
   languageName: node
   linkType: hard
 
@@ -20918,6 +20930,13 @@ fsevents@^1.2.7:
     define-property: ^0.2.5
     kind-of: ^3.0.3
   checksum: d91d46e54297cad0544f04e4dff4694f92aca9661f59ad7e803a1ba94a2bb24b38ca4fd59ea827d24c9bdc6f7148d5c838287ee4b2b9c5df9b445b1c0d7a066c
+  languageName: node
+  linkType: hard
+
+"object-fit-images@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "object-fit-images@npm:3.2.4"
+  checksum: 0647ea1746d99098e4c0b1fc7ce5188a777f7968786f324079cf27fed96cb4789b8c9c7ddbaf7db55e123c42c30da648f71cd9071f969260215bfd93cbca8492
   languageName: node
   linkType: hard
 
