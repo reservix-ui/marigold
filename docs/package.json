@@ -22,7 +22,7 @@
     "@mdx-js/react": "1.6.22",
     "babel-preset-gatsby": "1.7.1",
     "gatsby": "3.7.1",
-    "gatsby-image": "^3.6.0",
+    "gatsby-image": "^3.7.1",
     "gatsby-plugin-emotion": "6.7.1",
     "gatsby-plugin-manifest": "3.7.1",
     "gatsby-plugin-mdx": "2.7.1",
