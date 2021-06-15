@@ -2,6 +2,7 @@ import React from 'react';
 import { BoxProps, Heading, Text } from '@marigold/components';
 import b2bTheme from '@marigold/theme-b2b';
 import { ComponentProps, ComponentPropsWithRef } from '@marigold/types/src';
+import Img from 'gatsby-image';
 
 import { CodeBlock } from '../components/CodeBlock';
 
@@ -159,4 +160,5 @@ export const mdxComponents = {
   ) => {
     return <tr style={{ padding: b2bTheme.space.xsmall }} {...props}></tr>;
   },
+  Img,
 };
