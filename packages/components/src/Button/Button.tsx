@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useButton } from 'react-aria';
 import { ComponentPropsWithRef } from '@marigold/types';
-import { Box } from '../Box';
+
+import { Box, BoxOwnProps } from '../Box';
 
 export type ButtonProps = {
   variant?: string;
-} & ComponentPropsWithRef<'button'>;
+} & BoxOwnProps &
+  ComponentPropsWithRef<'button'>;
 
-export const Button: React.FC<ButtonProps> = ({
-  variant = 'primary.large',
-  children,
-  ...props
-}) => {
+export const Button = ({ variant = 'primary.large', ...props }) => {
+  const ref = useRef<any>();
+  const { buttonProps } = useButton(props, ref);
+  const { children } = props;
+
   return (
-    <Box as="button" {...props} variant={`button.${variant}`}>
+    <Box
+      {...props}
+      {...buttonProps}
+      as="button"
+      variant={`button.${variant}`}
+      ref={ref}
+    >
       <Box as="span" display="inline-flex" alignItems="center">
         {children}
       </Box>
